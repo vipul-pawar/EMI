@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% load static tailwind_tags %}
+
+{% block title %}
+  Home Page
+{% endblock title %}
+
+{% block main-contain %}
+    <!-- Two input fields -->
+    <div class="w-full max-w-lg p-6 bg-slate-800 bg-opacity-30 rounded-lg shadow-md">
+      <h2 class="text-center text-white text-4xl font-semibold mb-6">Enter Your Details</h2>
+      <form action="/result" method="post">
+        {% csrf_token %}
+        <div class="mb-4">
+          <input type="number" name="principal" class="form-control bg-transparent text-white placeholder-white focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Enter Principal Amount" required>
+        </div>
+        <div class="mb-4">
+          <input type="number" name="annual_rate" class="form-control bg-transparent text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Enter Anual Rate (%) " required>
+        </div>
+        <div class="mb-4">
+            <input type="number" name="tenure" class="form-control bg-transparent text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Time Period (month's)" required>
+          </div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">Submit</button>
+      </form>
+    </div>
+{% endblock main-contain %}
