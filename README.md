@@ -51,7 +51,7 @@ python manage.py runserver
 Project Structure
 EMI/
 │
-├── emi/                 # Main Django application
+├── emi_calculator/      # Main Django application
 ├── templates/           # HTML templates for the application
 ├── static/              # Static files (CSS, JS, images)
 ├── manage.py            # Django management script
