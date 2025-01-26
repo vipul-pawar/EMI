@@ -49,4 +49,14 @@ python manage.py runserver
 
 
 Project Structure
-Database migration files │ ├── templates/ # HTML templates for the application │ ├── static/ # Static files (CSS, JS, images) │ ├── views.py # Application views and logic │ └── models.py # Database models ├── manage.py # Django management script ├── requirements.txt # List of dependencies ├── db.sqlite3 # SQLite database file (auto-generated) └── README.md # Project documentation
+php
+Copy
+Edit
+EMI/
+│
+├── emi_calculator/      # Main Django application
+├── templates/           # HTML templates for the application
+├── static/              # Static files (CSS, JS, images)
+├── manage.py            # Django management script
+├── requirements.txt     # List of dependencies
+└── README.md            # Project documentation
