@@ -28,35 +28,36 @@ Before running the project, ensure you have the following installed on your mach
 
 Follow these steps to set up the EMI Calculator locally:
 
+
+Follow these steps to set up the EMI Calculator locally:
+
 1. **Clone the Repository**:
-git clone https://github.com/vipul-pawar/EMI.git
-cd EMI
+   ```bash
+   git clone https://github.com/vipul-pawar/EMI.git
+   cd EMI
+Create a Virtual Environment:
 
-2.Create a Virtual Environment:
-python3 -m venv venv
-venv\Scripts\activate
-
-3. Install Required Dependencies:
-pip install -r requirements.txt
-
-4.Apply Database Migrations:
-python manage.py migrate
-
-5.Run the Development Server:
-python manage.py runserver
-
-6.Access the Application: Open your web browser and navigate to http://127.0.0.1:8000/.
-
-
-Project Structure
-php
+bash
 Copy
 Edit
-EMI/
-│
-├── emi_calculator/      # Main Django application
-├── templates/           # HTML templates for the application
-├── static/              # Static files (CSS, JS, images)
-├── manage.py            # Django management script
-├── requirements.txt     # List of dependencies
-└── README.md            # Project documentation
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install Required Dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Apply Database Migrations:
+
+bash
+Copy
+Edit
+python manage.py migrate
+Run the Development Server:
+
+bash
+Copy
+Edit
+python manage.py runserver
+Access the Application: Open your web browser and navigate to http://127.0.0.1:8000/.
