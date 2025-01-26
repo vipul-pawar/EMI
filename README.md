@@ -34,18 +34,16 @@ Follow these steps to set up the EMI Calculator locally:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/vipul-pawar/EMI.git
-   cd EMI
+   cd emi
 
 2. **Create a Virtual Environment**:
    ```bash
-   python3 -m venv venv
+   python3 -m venv .venv
    venv\Scripts\activate   
-
 
 3. **Install Required Dependencies**:
    ```bash
    pip install -r requirements.txt
-   Apply Database Migrations:
 
 4. **Apply Database Migrations**:
    ```bash
