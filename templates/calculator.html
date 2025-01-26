@@ -8,20 +8,23 @@
 
 {% block main-contain %}
     <!-- Two input fields -->
-    <div class="w-full max-w-lg p-6 bg-slate-800 bg-opacity-30 rounded-lg shadow-md">
+    <div class="w-full max-w-lg p-6 bg-teal-200 bg-opacity-50 rounded-lg shadow-md">
       <h2 class="text-center text-white text-4xl font-semibold mb-6">Enter Your Details</h2>
       <form action="/result" method="post">
         {% csrf_token %}
         <div class="mb-4">
-          <input type="number" name="principal" class="form-control bg-transparent text-white placeholder-white focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Enter Principal Amount" required>
+          <label for="principal" class="block text-white mb-2 font-medium">Principal Amount</label>
+          <input type="number" id="principal" name="principal" class="form-control bg-transparent text-white placeholder-white focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Enter Principal Amount" required>
         </div>
         <div class="mb-4">
-          <input type="number" name="annual_rate" class="form-control bg-transparent text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Enter Anual Rate (%) " required>
+          <label for="annual_rate" class="block text-white mb-2 font-medium">Annual Interest Rate (%)</label>
+          <input type="number" id="annual_rate" name="annual_rate" class="form-control bg-transparent text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Enter Annual Rate (%)" required>
         </div>
         <div class="mb-4">
-            <input type="number" name="tenure" class="form-control bg-transparent text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Time Period (month's)" required>
-          </div>
-        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">Submit</button>
+          <label for="tenure" class="block text-white mb-2 font-medium">Time Period (Months)</label>
+          <input type="number" id="tenure" name="tenure" class="form-control bg-transparent text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none rounded-md p-3" placeholder="Time Period (month's)" required>
+        </div>
+        <button type="submit" class="w-full bg-teal-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">Submit</button>
       </form>
     </div>
 {% endblock main-contain %}
