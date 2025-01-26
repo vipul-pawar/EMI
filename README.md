@@ -39,7 +39,7 @@ Follow these steps to set up the EMI Calculator locally:
 2. **Create a Virtual Environment**:
    ```bash
    python3 -m venv .venv
-   venv\Scripts\activate   
+   .venv\Scripts\activate   
 
 3. **Install Required Dependencies**:
    ```bash
