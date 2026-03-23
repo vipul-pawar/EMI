@@ -24,7 +24,7 @@ Before running the project, ensure you have the following installed on your mach
 - pip (Python package installer)
 - Virtualenv (optional but recommended)
 
-# Installation
+## Installation
 
 Follow these steps to set up the EMI Calculator locally:
 
